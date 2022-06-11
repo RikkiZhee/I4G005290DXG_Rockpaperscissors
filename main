@@ -33,19 +33,19 @@ while True:
         print(f"Both players selected {Player}. It's a tie!")
     elif Player == "R":
         if CPU == "S":
-            print("Rock smashes scissors! You win!")
+            print("You win!")
         else:
-            print("Paper covers rock! You lose.")
-    elif user_action == "paper":
-        if computer_action == "rock":
-            print("Paper covers rock! You win!")
+            print("You lose.")
+    elif Player == "P":
+        if CPU == "R":
+            print("You win!")
         else:
-            print("Scissors cuts paper! You lose.")
-    elif user_action == "scissors":
-        if computer_action == "paper":
-            print("Scissors cuts paper! You win!")
+            print("You lose.")
+    elif Player == "S":
+        if CPU == "P":
+            print("You win!")
         else:
-            print("Rock smashes scissors! You lose.")
+            print("You lose.")
 
     play_again = input("Play again? (y/n): ")
     if play_again.lower() != "y":
